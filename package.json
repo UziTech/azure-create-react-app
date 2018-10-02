@@ -6,9 +6,8 @@
   "license": "MIT",
   "author": "Microsoft",
   "scripts": {
-    "start": "node server.js",
     "postinstall": "npm run build",
-    "react-start": "react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
