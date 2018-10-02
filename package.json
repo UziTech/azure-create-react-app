@@ -6,7 +6,7 @@
   "license": "MIT",
   "author": "Microsoft",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server.js",
     "postinstall": "npm run build",
     "react-start": "react-scripts start",
     "build": "react-scripts build",
@@ -23,7 +23,7 @@
     "extends": "react-app"
   },
   "engines": {
-      "node": "10.6.0"
+    "node": "10.6.0"
   },
   "browserslist": [
     ">0.2%",
