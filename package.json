@@ -6,7 +6,9 @@
   "license": "MIT",
   "author": "Microsoft",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node index.js",
+    "postinstall": "npm run build",
+    "react-start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -14,7 +16,8 @@
   "dependencies": {
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "2.0.3"
+    "react-scripts": "2.0.3",
+    "express": "^4.16.3"
   },
   "eslintConfig": {
     "extends": "react-app"

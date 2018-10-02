@@ -1,14 +1,13 @@
-var http = require("http");
+const express = require('express');
+const path = require('path');
+const app = express();
+const port = process.env.PORT || 1337;
 
-var server = http.createServer(function (request, response) {
-	response.writeHead(200, {"Content-Type": "application/json"});
-	response.end(JSON.stringify({
-		port: process.env.PORT,
-		versions: process.versions
-	}));
+// Serve any static files
+app.use(express.static(path.join(__dirname, 'build')));
+// Handle React routing, return all requests to React app
+app.get('*', function(req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-var port = process.env.PORT || 1337;
-server.listen(port);
-
-console.log("Server running at http://localhost:%d", port);
+app.listen(port, () => console.log(`Listening on port ${port}`));
