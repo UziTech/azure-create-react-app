@@ -15,7 +15,7 @@
   "dependencies": {
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-scripts": "2.1.7",
+    "react-scripts": "2.1.8",
     "express": "^4.16.4"
   },
   "eslintConfig": {
