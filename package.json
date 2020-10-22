@@ -13,8 +13,8 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-scripts": "3.4.4",
     "express": "^4.17.1"
   },
