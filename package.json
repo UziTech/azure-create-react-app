@@ -22,7 +22,7 @@
     "extends": "react-app"
   },
   "engines": {
-    "node": "10.23.3"
+    "node": "14.15.5"
   },
   "browserslist": [
     ">0.2%",
